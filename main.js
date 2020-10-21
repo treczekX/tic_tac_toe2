@@ -120,10 +120,14 @@ const handleButtonClick = () => {
 handleResetScore = ()=>{
     panelO.innerText='0';
     panelX.innerText='0';
-    panelDraw.innerText='0'
+    panelDraw.innerText='0';
+    counterX=0;
+    counterO=0;
+    counterDraw=0;
 }
 
 handleGamesScoreReset = () => {
+    gamesCounter=0
     games.innerText='0'
 }
 
