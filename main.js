@@ -49,11 +49,11 @@ const displayWinMessage = () => {
 const resultPanelMessage = () => {
     if (won ==='X'){
         panelX.innerText=`${++counterX}`
-        games.innerText=`${gamesCounter+1}`
+        games.innerText=`${++gamesCounter}`
     }
     else if (won==='O'){
         panelO.innerText=`${++counterO}`
-        games.innerText=`${gamesCounter+1}`
+        games.innerText=`${++gamesCounter}`
     }
 }
 
@@ -87,7 +87,7 @@ const validateGame = () => {
         gameActive=false;
         displayTieMessage();
         panelDraw.innerText=`${++counterDraw}`
-        games.innerText=`${gamesCounter+1}`
+        games.innerText=`${++gamesCounter}`
     }
 }
 
